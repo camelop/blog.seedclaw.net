@@ -27,7 +27,9 @@ site_author = "<your name here>"
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
-site_url = "https://blog.seedclaw.net/"
+site_url = "https://blog.seedclaw.net/en/"
+docs_dir = "docs/en"
+site_dir = "site/en"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
@@ -46,14 +48,7 @@ Copyright &copy; 2026 SeedClaw
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
   { "Home" = "index.md" },
-  { "English" = [
-    { "Home" = "en/index.md" },
-    { "Preface" = "en/preface.md" },
-  ] },
-  { "中文" = [
-    { "首页" = "zh/index.md" },
-    { "序章" = "zh/preface.md" },
-  ] },
+  { "Preface" = "preface.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize

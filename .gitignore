@@ -12,5 +12,8 @@ wheels/
 # Zensical build output
 site/
 
+# staticrypt local test artifact
+.staticrypt.json
+
 # Claude Code local state
 .claude/
