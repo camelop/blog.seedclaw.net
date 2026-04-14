@@ -1,12 +1,8 @@
 # SeedClaw
 
-**Build an AI Agent from scratch.** A hands-on tutorial on how Agents are
-actually constructed — component by component, prompt by prompt.
+**Build an AI Agent from scratch.** · **从零开始亲手构建一个 AI Agent。**
 
-**从零开始亲手构建一个 AI Agent。** 一篇硬核的实操教程：按组件拆解，
-用 prompt 驱动，一步一步把一个 Agent 拼出来。
+Pick a language to continue · 选择语言继续：
 
----
-
-- [Preface (English)](en/preface.md)
-- [序章（中文）](zh/preface.md)
+- [English →](en/index.md)
+- [中文 →](zh/index.md)

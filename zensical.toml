@@ -47,9 +47,11 @@ Copyright &copy; 2026 SeedClaw
 nav = [
   { "Home" = "index.md" },
   { "English" = [
+    { "Home" = "en/index.md" },
     { "Preface" = "en/preface.md" },
   ] },
   { "中文" = [
+    { "首页" = "zh/index.md" },
     { "序章" = "zh/preface.md" },
   ] },
 ]
@@ -305,6 +307,16 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
+[project.extra]
+
+# Built-in language switcher (shown in the header on every page).
+# Each entry becomes a dropdown option; `lang` is emitted as hreflang for SEO.
+# Read more: https://zensical.org/docs/setup/language/#language-selector
+alternate = [
+  { name = "English", link = "/en/", lang = "en" },
+  { name = "中文", link = "/zh/", lang = "zh" },
+]
+
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
