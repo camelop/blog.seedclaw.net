@@ -11,13 +11,13 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "seedclaw"
+site_name = "SeedClaw"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "seedclaw agent building tutorial."
+site_description = "SeedClaw — an AI agent building tutorial."
 
 # The site_author attribute. This is used in the HTML head element.
 #
@@ -34,7 +34,7 @@ site_url = "https://blog.seedclaw.net/"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+Copyright &copy; 2026 SeedClaw
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -44,10 +44,15 @@ Copyright &copy; 2026 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+  { "Home" = "index.md" },
+  { "English" = [
+    { "Preface" = "en/preface.md" },
+  ] },
+  { "中文" = [
+    { "序章" = "zh/preface.md" },
+  ] },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
