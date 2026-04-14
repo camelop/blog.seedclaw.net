@@ -47,14 +47,15 @@ jobs:
         run: |
           printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm install -g staticrypt
-      - name: Encrypt HTML with site password
-        env:
-          STATICRYPT_PASSWORD: ${{ secrets.NAIVE_ACCESS_PASSWD }}
-        run: staticrypt site/* -r -d site --short --remember 365
+      # TODO: uncomment to re-enable staticrypt encryption
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+      # - run: npm install -g staticrypt
+      # - name: Encrypt HTML with site password
+      #   env:
+      #     STATICRYPT_PASSWORD: ${{ secrets.NAIVE_ACCESS_PASSWD }}
+      #   run: staticrypt site/* -r -d site --short --remember 365
 
       - uses: actions/upload-pages-artifact@v4
         with:
