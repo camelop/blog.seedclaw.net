@@ -23,7 +23,8 @@ jobs:
       - run: pip install zensical
       - run: zensical build --clean
       - name: Disallow all crawlers (polite layer)
-        run: printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
+        run: |
+          printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
